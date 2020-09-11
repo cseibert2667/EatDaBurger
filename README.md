@@ -14,9 +14,10 @@ To use, simply "create a burger" by typing in it's name and clicking the "Make N
 
 ## Examples:
 
-Deployed App: 
+Deployed App: https://limitless-badlands-57834.herokuapp.com/
 
 Preview Screenshot:
+
 <img src="./assets/preview.png" style="width: 500px" alt="preview">
 
 ## Questions?
