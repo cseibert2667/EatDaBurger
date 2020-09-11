@@ -2,7 +2,7 @@ const connection = require("./connection.js");
 const e = require("express");
 
 const orm = {
-  selectAll: function (table, col, val, cb) {
+  selectAll: function (table, cb) {
     const query = "SELECT * FROM ?? WHERE ?? = ?";
     connection.query(query, [table, col, val], function (err, res) {
       if (err) throw err;
