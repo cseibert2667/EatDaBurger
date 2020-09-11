@@ -9,22 +9,22 @@ const orm = {
       cb(res);
     });
   },
-  insertOne: function (table, nameCol, devouredCol, nameVal, devouredVal, cb) {
+  insertOne: function (table, nameCol, devCol, nameVal, devVal, cb) {
     const query = "INSERT INTO ?? (??,??) VALUES (?,?)";
     connection.query(
       query,
-      [table, nameCol, devouredCol, nameVal, devouredVal],
+      [table, nameCol, devCol, nameVal, devVal],
       function (err, res) {
         if (err) throw err;
         cb(res);
       }
     );
   },
-  updateOne: function (table, devouredCol, devouredVal, nameCol, nameVal, cb) {
+  updateOne: function (table, devCol, devVal, idCol, idVal, cb) {
     const query = "UPDATE ?? SET ?? = ? WHERE ?? = ?";
     connection.query(
         query,
-        [table, devouredCol, devouredVal, nameCol, nameVal],
+        [table, devCol, devVal, idCol, idVal],
         function (err, res) {
             if (err) throw err;
             cb(res)
