@@ -3,8 +3,8 @@ const e = require("express");
 
 const orm = {
   selectAll: function (table, cb) {
-    const query = "SELECT * FROM ?? WHERE ?? = ?";
-    connection.query(query, [table, col, val], function (err, res) {
+    const query = "SELECT * FROM ??";
+    connection.query(query, table, function (err, res) {
       if (err) throw err;
       cb(res);
     });
